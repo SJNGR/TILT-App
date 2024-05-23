@@ -1,0 +1,75 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tilt This Text</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="script.js"></script>
+    
+    <style> 
+    section {
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    }
+    .container {
+    width: 95%;
+    border-radius: 20px;
+    border: 3px solid rgb(212, 197, 210);
+    background-color: rgb(253, 244, 255);
+    display: flex;       
+    justify-content: center;
+    align-items: center;
+    }
+    textarea {
+    width: 600px;
+    height: 450px;
+    margin-bottom: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(76, 3, 107, 0.589);
+    border-radius: 10px;
+    }
+    #TILTbutton {
+    padding: 10px 20px;
+    background-color: #84c0ff;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: x-large;
+    }
+    #TILTbutton:hover {
+    background-color: #b900c0;
+    font-style: italic;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <h1>Tilt the Balance</h1>
+    </header>
+    
+    <section>
+    <div class="container">
+        <article>
+            <h4 align="right" style="margin: 10px;">Enter biased text in the box below...</h4>
+            <textarea input type="text" id="userInput" placeholder="Enter text"></textarea>
+        </article>     
+        <article>
+            <button id="TILTbutton" onclick="processInput()">TILT</button>
+        </article>
+        <article>
+            <h4 align="left" style="margin: 10px;">...For a more equal world</h4>    
+            <textarea id="response" readonly></textarea>
+        </article>       
+        </section>  
+
+    </div>
+
+    <br>
+    <//homepage link>
+    <a href="../index.html">Home</a>
+</body>
+</html>
+
+<//Only in freedom can man grow to his full stature. Only in freedom will he learn to think and move, and give the very best in him. Only in freedom will he realize the true force of the social bonds which knit men together, and which are the true foundation of a normal social life.>
